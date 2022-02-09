@@ -1,0 +1,32 @@
+.theme--light.v-sheet .v-card__title {
+    color: rgba(94, 86, 105, 0.87) !important;
+}
+
+.theme--dark.v-sheet .v-card__title {
+    color: rgba(231, 227, 252, 0.87) !important;
+}
+
+.theme--light.v-card>.v-card__text,
+.theme--light.v-card>.v-card__subtitle {
+    color: rgba(94, 86, 105, 0.68) !important;
+}
+
+.theme--light.v-application .text--primary {
+    color: rgba(94, 86, 105, 0.87) !important;
+}
+
+.v-text-field.v-text-field--solo.v-input--dense>.v-input__control {
+    max-width: 300px;
+}
+
+.my-smart-text-line {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.my-smart-text-line:hover {
+    text-overflow: none;
+    white-space: none;
+    overflow: auto;
+}
