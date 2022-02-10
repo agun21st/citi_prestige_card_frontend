@@ -9,7 +9,7 @@
           sort-by="id"
           item-key="id"
           sort-desc
-          class="elevation-15"
+          class="elevation-10"
           :loading="tableLoading"
           loading-text="Categories are loading..."
           style="font-weight: 600"

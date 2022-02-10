@@ -9,7 +9,7 @@
           sort-by="id"
           item-key="id"
           sort-desc
-          class="elevation-15"
+          class="elevation-10"
           :loading="tableLoading"
           loading-text="Sub-Categories are loading..."
           style="font-weight: 600"
@@ -102,7 +102,7 @@
                               required
                             ></v-autocomplete>
                           </v-col>
-                          <v-col cols="12">
+                          <v-col cols="12" md="6">
                             <v-text-field
                               v-model="editedItem.name"
                               label="Brand Name..."
@@ -237,11 +237,11 @@ export default {
     deleteItemId: 0,
     editedIndex: -1,
     editedItem: {
-      category_id: "",
+      category_id: 0,
       name: "",
     },
     defaultItem: {
-      category_id: "",
+      category_id: 0,
       name: "",
     },
   }),

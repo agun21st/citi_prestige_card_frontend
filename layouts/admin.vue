@@ -32,11 +32,10 @@
         </v-list-item>
         <v-list-group
           :value="
-            $route.path == '/admin/tools' ||
-            $route.path == '/admin/departments' ||
+            $route.path == '/admin/offers' ||
             $route.path == '/admin/categories' ||
-            $route.path == '/admin/sub-categories' ||
-            $route.path == '/admin/courses/' ||
+            $route.path == '/admin/brands' ||
+            $route.path == '/admin/locations' ||
             $route.path == '/admin/courses'
               ? true
               : false
@@ -44,7 +43,7 @@
           prepend-icon="mdi-cog-outline"
         >
           <template v-slot:activator>
-            <v-list-item-title>Tools</v-list-item-title>
+            <v-list-item-title>Settings</v-list-item-title>
           </template>
 
           <v-list-item
@@ -203,9 +202,9 @@ export default {
       ],
       departments: [
         {
-          icon: "mdi-hammer-screwdriver",
-          title: "Tools List",
-          to: "/admin/tools",
+          icon: "mdi-offer",
+          title: "Offers",
+          to: "/admin/offers",
         },
         // {
         //   icon: "mdi-vector-intersection",
@@ -223,7 +222,7 @@ export default {
           to: "/admin/brands",
         },
         {
-          icon: "mdi-school",
+          icon: "mdi-map-marker-radius",
           title: "Locations",
           to: "/admin/locations",
         },

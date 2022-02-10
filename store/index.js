@@ -14,7 +14,8 @@ export const state = () => ({
     students: [],
     user_department: [],
     departments: [],
-    courses: [],
+    locations: [],
+    offers: [],
     categories: [],
     brands: [],
     tools: [],
@@ -73,9 +74,13 @@ export const mutations = {
         // state.departments = [];
         state.departments = payload;
     },
-    updateCourses(state, payload) {
-        // state.Courses = [];
-        state.courses = payload;
+    updateLocations(state, payload) {
+        // state.locations = [];
+        state.locations = payload;
+    },
+    updateOffers(state, payload) {
+        // state.offers = [];
+        state.offers = payload;
     },
     updateCategories(state, payload) {
         // state.categories = [];
@@ -145,8 +150,11 @@ export const actions = {
     fireDepartments({ commit }, payload) {
         commit("updateDepartments", payload);
     },
-    fireCourses({ commit }, payload) {
-        commit("updateCourses", payload);
+    fireLocations({ commit }, payload) {
+        commit("updateLocations", payload);
+    },
+    fireOffers({ commit }, payload) {
+        commit("updateOffers", payload);
     },
     fireCategories({ commit }, payload) {
         commit("updateCategories", payload);
