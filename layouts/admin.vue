@@ -9,7 +9,7 @@
       class="elevation-5"
     >
       <div class="mt-2 d-flex justify-center align-center flex-column">
-        <v-img src="/logo.png" :width="miniVariant ? 40 : 150" contain class="my-4" alt="cit.tools"></v-img>
+        <v-img src="/CreativeITLogo.png" :width="miniVariant ? 40 : 150" contain class="my-4" alt="cit.tools"></v-img>
         <v-avatar :size="miniVariant ? 40 : 80">
           <img
             :src="$auth.user.image? $auth.user.image:require('@/assets/images/avatars/1.png')"

@@ -32,7 +32,7 @@
         <v-col cols="12" md="6" v-show="!resetPass">
           <v-card flat tile class="d-flex flex-column pa-16">
             <v-img
-              src="/logo.png"
+              src="/CreativeITLogo.png"
               max-width="200"
               contain
               class="mb-5 mb-md-10"
@@ -221,7 +221,7 @@ export default {
       .then((res) => {
         this.system_ip = res.ip;
         this.system_ip = this.system_ip.split(".").join("")
-        this.$citCookies.set("creativeItInstitute_cit_tools",this.system_ip);
+        this.$citCookies.set("creativeItInstitute_cit_prestige_card",this.system_ip);
         // this.myPresenceId = this.$citCookies.get("creativeItInstitute_cit_tools");
         // let ipString = this.myPresenceId.toString();
         // this.myPresenceId = ipString;

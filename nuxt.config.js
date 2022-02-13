@@ -16,8 +16,8 @@ export default {
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        titleTemplate: "%s - cit.tools",
-        title: "cit.tools download area",
+        titleTemplate: "%s - Creative IT Institute",
+        title: "Creative IT Prestige Card",
         meta: [
             { charset: "utf-8" },
             { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -86,7 +86,7 @@ export default {
         strategies: {
             laravelSanctum: {
                 provider: "laravel/sanctum",
-                // url: "https://api.cit.tools",
+                // url: "https://prestigecard.creativeitinstitute.com",
                 url: "http://localhost:8000",
                 endpoints: {
                     login: {
@@ -125,19 +125,19 @@ export default {
     // PWA module configuration: https://go.nuxtjs.dev/pwa
     pwa: {
         meta: {
-            title: "CITI Tools App",
-            author: "Md.M.H.Razib",
+            title: "Creative IT Prestige Card",
+            author: "Md. Mahadi Hassan Razib",
             mobileAppIOS: true,
             theme_color: "red"
         },
         manifest: {
-            name: "cit.tools app",
-            short_name: "cit.tools",
+            name: "Creative IT Prestige Card app",
+            short_name: "CITI",
             description: "Creative IT Institute provide their students resources for better learning",
             lang: "en"
         },
         icon: {
-            fileName: "app-icon.png"
+            fileName: "Creative_IT_Institute_512.png"
         }
     },
 

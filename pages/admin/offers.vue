@@ -22,13 +22,14 @@
               <td :colspan="headers.length">
                 <v-row justify="space-between">
                   <v-col cols="12" sm="6" md="4" lg="3" class="d-flex justify-center align-center">
-                    <span v-if="item.logo">
+                    <span v-if="item.logo" class="pa-5">
                       <v-img
                         :src="item.logo"
                         lazy-src="https://picsum.photos/10/6"
                         :alt="item.name"
-                        style="width: 50px; height: 50px; cursor: pointer"
+                        style="width: 100px; height: 100px; cursor: pointer"
                         @click.stop="showImage(item.logo)"
+                        class="elevation-5"
                       >
                         <template v-slot:placeholder>
                           <v-row
@@ -82,13 +83,28 @@
                 item.discount + "%"
               }}
             </template>
-            <template v-slot:header.name="{ header }">
+            <template v-slot:header.title="{ header }">
+              <strong>{{ header.text.toUpperCase() }}</strong>
+            </template>
+            <template v-slot:header.discount="{ header }">
+              <strong>{{ header.text.toUpperCase() }}</strong>
+            </template>
+            <template v-slot:header.location.name="{ header }">
+              <strong>{{ header.text.toUpperCase() }}</strong>
+            </template>
+            <template v-slot:header.brand.name="{ header }">
+              <strong>{{ header.text.toUpperCase() }}</strong>
+            </template>
+            <template v-slot:header.category.name="{ header }">
+              <strong>{{ header.text.toUpperCase() }}</strong>
+            </template>
+            <template v-slot:header.actions="{ header }">
               <strong>{{ header.text.toUpperCase() }}</strong>
             </template>
             <template v-slot:header.created_at="{ header }">
               <strong>{{ header.text.toUpperCase() }}</strong>
             </template>
-            <template v-slot:header.actions="{ header }">
+            <template v-slot:header.data-table-expand="{ header }">
               <strong>{{ header.text.toUpperCase() }}</strong>
             </template>
             <template v-slot:top>
